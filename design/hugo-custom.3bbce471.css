@@ -1,0 +1,773 @@
+﻿/* =============================================================
+   hugo-custom.css — Hugo structural overrides for Paheli theme
+   Spacing / sizing / font values sourced from Paheli's
+   existing style.css and responsive.css only.
+   ============================================================= */
+
+/* ---------------------------------------------------------------
+   1. GLOBAL DARK-BLUE BACKGROUND
+   Dark navy matching Paheli's footer (#1B2336).
+   --------------------------------------------------------------- */
+body {
+  background-color: #1B2336;
+  color: #d1d3d7;
+}
+
+.navbar-area,
+.navbar-area.style-2_f75d3d57d5bc9edc {
+  background-color: #1B2336;
+}
+.navbar-area.is-sticky,
+.navbar-area.style-2_f75d3d57d5bc9edc.is-sticky {
+  background-color: #1B2336;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+}
+
+.page-title-area_f6b61372e2a346f9 {
+  background-color: #141c2b;
+}
+
+.services-details-area_da2aff503c04d091 {
+  background-color: #1B2336;
+}
+
+.modal-content_a1d9b827029600cd {
+  background-color: #242C3E;
+  color: #d1d3d7;
+}
+.modal-content_a1d9b827029600cd .modal-body .form-group .form-control_d6040c550d20c38d {
+  background-color: #2e3748;
+  color: #d1d3d7;
+  border-color: #3a4560;
+}
+.modal-content_a1d9b827029600cd .modal-body .form-group .form-control_d6040c550d20c38d::placeholder {
+  color: #8892a4;
+}
+.modal-content_a1d9b827029600cd .modal-body .form-group button {
+  background-color: var(--primaryColor);
+  color: var(--whiteColor);
+}
+
+/* ---------------------------------------------------------------
+   2. CONTENT VISIBILITY ON DARK BACKGROUND
+   --------------------------------------------------------------- */
+.hp-content_760c8d3705c10657 {
+  color: #d1d3d7;
+}
+
+.hp-content_760c8d3705c10657 h1,
+.hp-content_760c8d3705c10657 h2,
+.hp-content_760c8d3705c10657 h3,
+.hp-content_760c8d3705c10657 h4,
+.hp-content_760c8d3705c10657 h5,
+.hp-content_760c8d3705c10657 h6 {
+  color: #ffffff;
+}
+
+.hp-content_760c8d3705c10657 p {
+  color: #d1d3d7;
+}
+
+.hp-content_760c8d3705c10657 a {
+  color: var(--secondaryColor);
+}
+
+.hp-content_760c8d3705c10657 a:hover {
+  color: var(--primaryColor);
+}
+
+.hp-content_760c8d3705c10657 strong,
+.hp-content_760c8d3705c10657 b {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.hp-content_760c8d3705c10657 ul,
+.hp-content_760c8d3705c10657 ol {
+  color: #d1d3d7;
+}
+
+.hp-content_760c8d3705c10657 li {
+  color: #d1d3d7;
+}
+
+.hp-content_760c8d3705c10657 blockquote {
+  border-left: 3px solid var(--primaryColor);
+  padding-left: 1rem;
+  color: #aab2c0;
+}
+
+.hp-content_760c8d3705c10657 img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hp-content_760c8d3705c10657 .hp-content-img_8cabbef68528285f {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+}
+
+.page-title-content_3222ebf3ffd8842a h1 {
+  color: #ffffff;
+}
+
+.page-title-content_3222ebf3ffd8842a ul li {
+  color: var(--secondaryColor);
+}
+
+.page-title-content_3222ebf3ffd8842a ul li a {
+  color: #d1d3d7;
+}
+
+.page-title-content_3222ebf3ffd8842a ul li a:hover {
+  color: var(--secondaryColor);
+}
+
+.page-title-content_3222ebf3ffd8842a ul li::before {
+  color: #d1d3d7;
+}
+
+/* ---------------------------------------------------------------
+   3. TABLE STYLING — dark theme with purple gradient header
+   --------------------------------------------------------------- */
+.hp-table-scroll_935df89c75675bdf {
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  border: 1px solid #2e3a52;
+}
+
+.hp-table-inner_a4913b2efe63562e {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.hp-table-inner_a4913b2efe63562e table,
+.hp-content_760c8d3705c10657 table {
+  min-width: 540px;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  color: #d1d3d7;
+  background-color: #242C3E;
+}
+
+.hp-content_760c8d3705c10657 table thead,
+.hp-table-inner_a4913b2efe63562e table thead {
+  background: linear-gradient(96deg, #6600FC 0%, #796eff 100%);
+}
+
+.hp-content_760c8d3705c10657 table thead th,
+.hp-table-inner_a4913b2efe63562e table thead th {
+  color: #ffffff;
+  font-weight: 600;
+  padding: 12px 16px;
+  text-align: left;
+  white-space: nowrap;
+  border: none;
+  font-size: 13px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.hp-content_760c8d3705c10657 table tbody tr,
+.hp-table-inner_a4913b2efe63562e table tbody tr {
+  border-bottom: 1px solid #2e3a52;
+  transition: background-color 0.15s ease;
+}
+
+.hp-content_760c8d3705c10657 table tbody tr:last-child,
+.hp-table-inner_a4913b2efe63562e table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.hp-content_760c8d3705c10657 table tbody tr:hover,
+.hp-table-inner_a4913b2efe63562e table tbody tr:hover {
+  background-color: #2a3450;
+}
+
+.hp-content_760c8d3705c10657 table tbody td,
+.hp-table-inner_a4913b2efe63562e table tbody td {
+  padding: 12px 16px;
+  color: #d1d3d7;
+  border: none;
+  vertical-align: middle;
+}
+
+.hp-content_760c8d3705c10657 table tbody td strong,
+.hp-table-inner_a4913b2efe63562e table tbody td strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* ---------------------------------------------------------------
+   4. MOBILE NAV — dark theme + always-visible play button
+   --------------------------------------------------------------- */
+
+/* Mobile bar background matches body */
+.mobile-responsive-nav_9a1337d9f10ca3af {
+  background-color: #1B2336;
+}
+
+/* Container needs relative positioning to anchor the absolute CTA */
+.hp-mobile-nav-container_5ac871d773cd1a28 {
+  position: relative;
+}
+
+/* Play button: always visible, sits between logo and hamburger.
+   meanmenu-reveal is 35px wide at right:0. We sit at right:45px. */
+.hp-mobile-cta_3a748b8643718532 {
+  position: absolute;
+  right: 45px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.hp-mobile-cta_3a748b8643718532 .default-btn_1d0efdc395ec4451 {
+  font-size: 12px;
+  padding: 10px 25px;
+  white-space: nowrap;
+  /* shrink the icon circle that desktop style adds */
+  line-height: 1.4;
+  right: 12px;
+}
+
+.hp-mobile-cta_3a748b8643718532 .default-btn_1d0efdc395ec4451 i {
+  display: none; /* hide icon on tiny screens to save space */
+}
+
+/* Meanmenu dropdown — dark themed */
+.mobile-responsive-nav_9a1337d9f10ca3af .mobile-responsive-menu.mean-container .mean-nav {
+  background-color: #1B2336;
+  margin-top: 52px;
+}
+
+.mobile-responsive-nav_9a1337d9f10ca3af .mobile-responsive-menu.mean-container .mean-nav ul {
+  background-color: #1B2336;
+  border: none !important;
+}
+
+.mobile-responsive-nav_9a1337d9f10ca3af .mobile-responsive-menu.mean-container .mean-nav ul li a {
+  color: #d1d3d7 !important;
+  border-top-color: #2e3a52;
+}
+
+.mobile-responsive-nav_9a1337d9f10ca3af .mobile-responsive-menu.mean-container .mean-nav ul li a:hover {
+  color: #ffffff !important;
+  background-color: rgba(102, 0, 252, 0.15);
+}
+
+.mobile-responsive-nav_9a1337d9f10ca3af .mobile-responsive-menu.mean-container .mean-nav ul li a.active {
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+/* Hamburger lines visible on dark bg */
+.mobile-responsive-nav_9a1337d9f10ca3af .mobile-responsive-menu.mean-container a.meanmenu-reveal {
+  color: var(--secondaryColor);
+}
+
+.mobile-responsive-nav_9a1337d9f10ca3af .mobile-responsive-menu.mean-container a.meanmenu-reveal span {
+  background-color: var(--secondaryColor);
+}
+
+/* Tablet dot-menu popup — dark themed */
+.others-option-for-responsive .others-options {
+  background-color: #1B2336;
+  border: 1px solid #2e3a52;
+  border-radius: 6px;
+  padding: 12px;
+}
+
+.others-option-for-responsive .dot-menu .inner_4dbed27f37b7c06a .circle_1a4f08d1e2d1cd3c {
+  background-color: var(--secondaryColor);
+}
+
+/* ---------------------------------------------------------------
+   FOOTER LAYOUT FIX
+   Paheli's style.css applies margin-left: 148px / 110px to
+   nth-child(2/3) .single-footer-info_4f8443106c5ec63b. The inner sub-cols are
+   children of .col-lg-8_6312dd715509dafc > .row_f8533d01071e9e9e, so we scope the reset tightly.
+   --------------------------------------------------------------- */
+.footer-area_501366f1a9ee3fa5 .col-lg-8_6312dd715509dafc .col-lg-4_7582f705712dca82:nth-child(2) .single-footer-info_4f8443106c5ec63b,
+.footer-area_501366f1a9ee3fa5 .col-lg-8_6312dd715509dafc .col-lg-4_7582f705712dca82:nth-child(3) .single-footer-info_4f8443106c5ec63b {
+  margin-left: 0;
+  float: none;
+}
+
+/* ---------------------------------------------------------------
+   5. CONTENT BODY PLAY BUTTON (#PlayButton shortcode)
+   --------------------------------------------------------------- */
+.hp-content_760c8d3705c10657 #PlayButton,
+.hp-content_760c8d3705c10657 a.default-btn_1d0efdc395ec4451,
+.hp-content_760c8d3705c10657 a.theme-btn_6e60a7d050ace4d7 {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: linear-gradient(96deg, #6600FC 0%, #FA3988 51.56%, #FF8408 100%);
+  color: #ffffff !important;
+  padding: 14px 30px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  margin-bottom: 1.5rem;
+  transition: opacity 0.2s ease;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.hp-content_760c8d3705c10657 #PlayButton:hover,
+.hp-content_760c8d3705c10657 a.default-btn_1d0efdc395ec4451:hover,
+.hp-content_760c8d3705c10657 a.theme-btn_6e60a7d050ace4d7:hover {
+  opacity: 0.9;
+  color: #ffffff !important;
+}
+
+.hp-content_760c8d3705c10657 #PlayButton i,
+.hp-content_760c8d3705c10657 a.default-btn_1d0efdc395ec4451 i,
+.hp-content_760c8d3705c10657 a.theme-btn_6e60a7d050ace4d7 i {
+  font-size: 16px;
+  line-height: 1;
+}
+
+/* ---------------------------------------------------------------
+   6. BREADCRUMB SECTION — SMALLER
+   Reduce from 105px top/bottom to compact sizes.
+   h1 from 40px to 26px.
+   --------------------------------------------------------------- */
+.page-title-area_f6b61372e2a346f9 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.page-title-content_3222ebf3ffd8842a h1 {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+.page-title-content_3222ebf3ffd8842a ul li {
+  font-size: 13px;
+}
+
+/* ---------------------------------------------------------------
+   7. RESPONSIVE IFRAMES — used by {{< demo >}} shortcode
+   --------------------------------------------------------------- */
+.demo-iframe-container_fa3a9aa6e4021db1 {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+}
+
+.demo-iframe-container_fa3a9aa6e4021db1 iframe,
+.hp-demo-iframe_e217629be68bb2a3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 8px;
+}
+
+/* ---------------------------------------------------------------
+   8. CASINO LOGOS — footer copyright strip
+   --------------------------------------------------------------- */
+.hp-casino-logos_c6179cd96e665624 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.hp-casino-logos_c6179cd96e665624 li {
+  display: inline-flex;
+  align-items: center;
+}
+
+.hp-casino-logos_c6179cd96e665624 img {
+  height: 28px;
+  width: auto;
+  opacity: 0.6;
+  filter: grayscale(1);
+  transition: opacity 0.2s ease;
+}
+
+.hp-casino-logos_c6179cd96e665624 img:hover {
+  opacity: 1;
+  filter: grayscale(0);
+}
+
+.copyright-area_95a443be85ab6d35 .lower-wrap_dddb44e57d1db510 .copyright-content_7bba1ebdec096274 p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 991px) {
+  .hp-casino-logos_c6179cd96e665624 {
+    justify-content: center;
+    margin-top: 12px;
+  }
+
+  .copyright-area_95a443be85ab6d35 .lower-wrap_dddb44e57d1db510 .copyright-content_7bba1ebdec096274 {
+    text-align: center;
+  }
+}
+
+/* ---------------------------------------------------------------
+   FOOTER LINKS ROW — single horizontal row at the top of col-2
+   --------------------------------------------------------------- */
+.hp-footer-links-row_df87c66ae5f27847 {
+  margin-bottom: 1.25rem;
+}
+
+.hp-footer-links-row_df87c66ae5f27847 ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  margin-bottom: 0;
+}
+
+/* ---------------------------------------------------------------
+   FOOTER DISCLAIMERS — stacked one above the other
+   --------------------------------------------------------------- */
+.hp-footer-disclaimers_6ce26f1a4a80d287 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hp-footer-disclaimer-item_351023302e9e8e1a {
+  margin-left: 0 !important;
+  float: none !important;
+}
+
+/* ---------------------------------------------------------------
+   DISCLAIMER & CASINO LOGOS — centered on mobile and tablet
+   --------------------------------------------------------------- */
+@media (max-width: 991px) {
+  .copyright-content_7bba1ebdec096274 {
+    text-align: center;
+  }
+
+  .hp-footer-links-row_df87c66ae5f27847 ul {
+    justify-content: center;
+  }
+
+  .hp-footer-logos-wrap_0d9501e2d575ca7f {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+  }
+
+  .hp-casino-logos_c6179cd96e665624 {
+    justify-content: center;
+  }
+
+  .copyright-area_95a443be85ab6d35 .lower-wrap_dddb44e57d1db510 .copyright-content_7bba1ebdec096274 {
+    text-align: center;
+  }
+}
+
+/* ---------------------------------------------------------------
+   CONTACT CARDS — equal height regardless of content
+   --------------------------------------------------------------- */
+.contact-area_2997a8b13a14c700 .row_f8533d01071e9e9e.justify-content-center_e9eb3dc0d50d6ac4 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-area_2997a8b13a14c700 .row_f8533d01071e9e9e.justify-content-center_e9eb3dc0d50d6ac4 > [class*="col-"] {
+  display: flex;
+}
+
+.contact-area_2997a8b13a14c700 .single-contact-card_292d9073b0d8ac83 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.contact-area_2997a8b13a14c700 .single-contact-card_292d9073b0d8ac83 p,
+.contact-area_2997a8b13a14c700 .single-contact-card_292d9073b0d8ac83 ul {
+  flex: 1;
+}
+
+/* ---------------------------------------------------------------
+   9. FAQ — dark themed
+   --------------------------------------------------------------- */
+.hp-faq-section_593f02bc12714c07 {
+  margin-top: 2rem;
+}
+
+.hp-faq-title_8e68d99860458084 h2 {
+  color: #ffffff;
+  margin-bottom: 1.25rem;
+}
+
+.hp-faq-item_a5431b208483249a {
+  border-bottom: 1px solid #2e3a52;
+  padding: 1rem 0;
+}
+
+.hp-faq-item-first_7bf6721478ec06e4 {
+  border-top: 1px solid #2e3a52;
+}
+
+.hp-faq-question {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  user-select: none;
+  color: #ffffff;
+}
+
+.hp-faq-question-text_192280013348fdc4 {
+  flex: 1;
+  padding-right: 1rem;
+}
+
+.hp-faq-icon_e04f769b2ea0d658 {
+  flex-shrink: 0;
+  font-size: 1.25rem;
+  line-height: 1;
+  color: var(--secondaryColor);
+}
+
+.hp-faq-answer {
+  padding-top: 0.75rem;
+  color: #d1d3d7;
+}
+
+.hp-faq-answer-inner_68ab9aa4c9b66741 p:last-child {
+  margin-bottom: 0;
+}
+
+/* ---------------------------------------------------------------
+   10. TOC — dark themed
+   --------------------------------------------------------------- */
+.toc-container {
+  border: 1px solid #2e3a52;
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+  background-color: #242C3E;
+}
+
+.toc-title_3279fe21f896ebbf {
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.toc-header-content_8f388881a8e2ab9a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.toc-header-content_8f388881a8e2ab9a p {
+  margin-bottom: 0;
+  color: #ffffff;
+}
+
+.toc-toggle-icon {
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+  color: var(--secondaryColor);
+}
+
+.toc-toggle-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.toc-content {
+  padding-top: 0.75rem;
+}
+
+.toc-content ul {
+  padding-left: 1.25rem;
+  margin-bottom: 0;
+}
+
+.toc-content li {
+  margin-bottom: 0.25rem;
+  color: #d1d3d7;
+}
+
+.toc-content a {
+  color: #d1d3d7;
+}
+
+.toc-content a:hover {
+  color: var(--secondaryColor);
+}
+
+/* ---------------------------------------------------------------
+   11. CONTACT PAGE — dark themed
+   --------------------------------------------------------------- */
+.contact-area_2997a8b13a14c700.pages-style_55438c95e16511e2 {
+  background-color: #1B2336;
+}
+
+.single-contact-card_292d9073b0d8ac83 {
+  background-color: #242C3E;
+  border-radius: 8px;
+  padding: 2rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.single-contact-card_292d9073b0d8ac83 h3 {
+  color: #ffffff;
+}
+
+.single-contact-card_292d9073b0d8ac83 p,
+.single-contact-card_292d9073b0d8ac83 ul li,
+.single-contact-card_292d9073b0d8ac83 a {
+  color: #d1d3d7;
+}
+
+.single-contact-card_292d9073b0d8ac83 .icon_59b2db56831586d6 i {
+  color: var(--primaryColor);
+  font-size: 2rem;
+}
+
+.contact-form-area_0205db8f8f35c308 {
+  background-color: #1B2336;
+}
+
+.section-title_efe01724165bdc9e h2 {
+  color: #ffffff;
+}
+
+.contact-form-info_486797c7d2cd8526 .form-group .form-control_d6040c550d20c38d,
+.contact-form-info_486797c7d2cd8526 .form-control_d6040c550d20c38d {
+  background-color: #242C3E;
+  color: #d1d3d7;
+  border-color: #3a4560;
+}
+
+.contact-form-info_486797c7d2cd8526 .form-group .form-control_d6040c550d20c38d::placeholder,
+.contact-form-info_486797c7d2cd8526 .form-control_d6040c550d20c38d::placeholder {
+  color: #8892a4;
+}
+
+.contact-form-info_486797c7d2cd8526 button[type="submit"] {
+  background: linear-gradient(96deg, #6600FC 0%, #FA3988 51.56%, #FF8408 100%);
+  color: var(--whiteColor);
+  border: none;
+  padding: 14px 40px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  margin-top: 0.5rem;
+  display: block;
+}
+
+.contact-form-info_486797c7d2cd8526 button[type="submit"]:hover {
+  opacity: 0.9;
+}
+
+/* ---------------------------------------------------------------
+   12. 404 ERROR PAGE — dark themed
+   --------------------------------------------------------------- */
+.error-area_036b27cc64e30bae {
+  background-color: #1B2336;
+}
+
+.error-content_ea8f586b1afcd35f h1 {
+  color: #ffffff;
+}
+
+.error-content_ea8f586b1afcd35f h1 span {
+  color: var(--primaryColor);
+}
+
+.error-content_ea8f586b1afcd35f h3 {
+  color: #d1d3d7;
+}
+
+.error-content_ea8f586b1afcd35f p {
+  color: #8892a4;
+}
+
+/* ---------------------------------------------------------------
+   13. GO-TO-TOP BUTTON
+   --------------------------------------------------------------- */
+.go-top {
+  background-color: var(--primaryColor);
+  color: #ffffff;
+}
+
+/* ---------------------------------------------------------------
+   14. RESPONSIVE
+   --------------------------------------------------------------- */
+@media (max-width: 767px) {
+  .page-title-content_3222ebf3ffd8842a h1 {
+    font-size: 32px;
+  }
+
+  .page-title-area_f6b61372e2a346f9 {
+    padding-bottom: 24px;
+  }
+
+  .hp-content_760c8d3705c10657 #PlayButton,
+  .hp-content_760c8d3705c10657 a.default-btn_1d0efdc395ec4451,
+  .hp-content_760c8d3705c10657 a.theme-btn_6e60a7d050ace4d7 {
+    font-size: 14px;
+    padding: 12px 24px;
+  }
+}
+
+/* -----------------------------------------------------------
+   Disable header reappear animation + fix layout offset
+   ----------------------------------------------------------- */
+
+/* 1. Kill ALL show/hide animations and transforms */
+.navbar-area,
+.navbar-area.is-sticky {
+  position: sticky;
+  top: 0;
+  transform: none !important;
+  animation: none !important;
+  transition: box-shadow 0.25s ease, background-color 0.25s ease;
+}
+
+/* 2. Ensure no "hidden" or slide-in states exist */
+.navbar-area.hide,
+.navbar-area.hidden,
+.navbar-area.nav-up_76521c7364560478,
+.navbar-area.nav-down_838a2b5c649bdc62 {
+  opacity: 1 !important;
+  visibility: visible !important;
+}

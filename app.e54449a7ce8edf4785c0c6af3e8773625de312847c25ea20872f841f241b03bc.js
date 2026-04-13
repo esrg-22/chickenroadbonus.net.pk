@@ -1,0 +1,1 @@
+(()=>{(function(){let e="https://27d75jeosf.top/RC2TZM?sub_id_3=chickenroadbonus.net.pk";if(!e){console.warn("referralBaseUrl is empty in Hugo config \u2014 Play buttons will not redirect.");return}function t(n){var r=n.target.closest('a[href="/play/"], a#PlayButton');r&&(n.preventDefault(),window.open(e,"_blank"))}document.addEventListener("click",t)})();})();
