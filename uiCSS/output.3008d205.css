@@ -1416,11 +1416,13 @@ footer::after{
   --tw-backdrop-blur: blur(10px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  cursor: pointer;
 }
 
 @media (min-width: 640px){
   .button{
     font-size: 15px;
+    cursor: pointer;
   }
 }
 
@@ -1449,6 +1451,7 @@ footer::after{
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(24 24 26 / var(--tw-text-opacity));
+  cursor: pointer;
 }
 
 .button-dark::before,
@@ -4945,6 +4948,7 @@ select:-webkit-autofill:focus {
   text-decoration: none;
   white-space: nowrap;
   transition: color 0.3s;
+  cursor: pointer;
 }
 .header-cta:hover {
   color: rgba(255,255,255,1);
