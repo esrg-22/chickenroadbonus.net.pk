@@ -1,0 +1,6 @@
+# Cloudflare Pages: keep preview deployments out of the index.
+https://:project.pages.dev/*
+  X-Robots-Tag: noindex, nofollow
+
+https://:version.:project.pages.dev/*
+  X-Robots-Tag: noindex, nofollow
